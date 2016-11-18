@@ -1,0 +1,3 @@
+coverage/*
+lib/config/config.yml
+**/cache.json
