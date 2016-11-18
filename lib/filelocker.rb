@@ -52,10 +52,5 @@ webrick_options = {
   :SSLEnable          => false,
 }
 
-def peel onion
-  onion = onion.instance_variable_get '@app' while onion.instance_variable_defined? '@app'
-  onion
-end
-
 Rack::Handler::WEBrick.run(Filelocker, webrick_options) do |server|
 end
